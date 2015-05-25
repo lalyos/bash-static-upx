@@ -6,7 +6,7 @@ ADD https://github.com/robxu9/bash-static/releases/download/4.3.30/bash-osx /dat
 RUN chmod +x /data/*
 
 VOLUME /releases
-WORKDIR /release
+WORKDIR /releases
 CMD upx --ultra-brute --best -o /releases/bash-linux /data/bash-linux \
     && upx --ultra-brute --best -o /releases/bash-osx  /data/bash-osx \
     && tar czvf bash-linux.tgz bash-linux \
