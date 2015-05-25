@@ -5,13 +5,13 @@ deps:
 	go get github.com/progrium/gh-release
 	
 build:
-	rm -rf releases
+	rm -rf release
 	docker build -t bash-static .
-	docker run -v $(shell pwd)/releases:/releases bash-static
+	docker run -v $(shell pwd)/release:/release bash-static
 
 test: build
-	./releases/bash-osx --version|grep -q 4.3.30
-	docker run -t -v $(shell pwd)/releases/bash-linux:/bash alpine /bash --version |  grep -q 4.3.30
+	./release/bash-osx --version|grep -q 4.3.30
+	docker run -t -v $(shell pwd)/release/bash-linux:/bash alpine /bash --version |  grep -q 4.3.30
 
 release: build
 	gh-release create $(REPO) $(VERSION)
