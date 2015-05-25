@@ -42,14 +42,6 @@ UPX 3.91        Markus Oberhumer, Laszlo Molnar & John Reiser   Sep 30th 2013
         File size         Ratio      Format      Name
    --------------------   ------   -----------   -----------
    1122099 ->    484068   43.14%  linux/ElfAMD   bash-linux
-
-Packed 1 file.
-                       Ultimate Packer for eXecutables
-                          Copyright (C) 1996 - 2013
-UPX 3.91        Markus Oberhumer, Laszlo Molnar & John Reiser   Sep 30th 2013
-
-        File size         Ratio      Format      Name
-   --------------------   ------   -----------   -----------
     929592 ->    364544   39.22%   Mach/AMD64    bash-osx
 
 ```
